@@ -53,14 +53,12 @@ public class Service {
      * */
     public static int[] max2(int [] tab) throws IllegalArgumentException{
 
-        if (tab==null ){
+        if (tab==null || tab.length==0 ){
            throw new IllegalArgumentException("The array is null");
         }
         else{
             int [] result = new int[2];
-            if(tab.length==0){
-                throw new IllegalArgumentException("The size of array is zero");
-            }else if (tab.length==1){
+            if (tab.length==1){
                 result[0]=tab[0];
                 result[1]= tab[0];
             }
@@ -75,7 +73,6 @@ public class Service {
                     secondGreatest= tab[1];
                     max= tab[0];
                 }
-
                 for (int i=2; i< tab.length; i++){
                     if(tab[i]> max){
                         secondGreatest = max;

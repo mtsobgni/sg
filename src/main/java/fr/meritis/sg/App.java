@@ -7,6 +7,7 @@ public class App {
     public static void main (String [] args){
 
        int[] tab = {34,34,67,4,6,8,-1,6,12,56,34};
+
         System.out.println(Service.max(tab));
         System.out.println(Service.maxSort(tab));
         System.out.println(Service.maxStream(tab));

@@ -12,7 +12,9 @@ That is take constant extra space. The space complexity is O(n).
 
 Point out any potential problems with the code and suggest how you would solve them :
 
-a potential problem with this algorithm can occurs when the size of array is important ( size great than 1 billion) or the array is null.
+-a potential problem with this algorithm can occurs when the size of array is important ( size great than 1 billion) or the array is null.
+
+-a other problem will be a OutBoudException while occur when using a for loop. To deal with it we can use a for each loop java.
 
 
 Propose any alternate ways you could implement this (without using a for loop for example).
