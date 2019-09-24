@@ -28,11 +28,9 @@ public class Service {
         if(tab==null || tab.length==0){
            throw new IllegalArgumentException("The array is null or, The size of array equal zero");
         }
-        else{
             return  Arrays.stream(tab)
                     .max()
                     .getAsInt();
-        }
 
     }
 
@@ -44,10 +42,8 @@ public class Service {
         if(tab==null || tab.length==0){
             throw new IllegalArgumentException("The array is null or, The size of array equal zero");
         }
-        else{
             Arrays.sort(tab);
             return tab[tab.length-1];
-        }
     }
     /* Question 3  algorith to determine the Top 2 Greatest int values from the input array.
      * */
